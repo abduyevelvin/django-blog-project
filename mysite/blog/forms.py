@@ -9,11 +9,11 @@ class PostForm(forms.ModelForm):
 
         widgets = {
             'title':forms.TextInput(attrs={'class':'textinputclass'}),
-            'text':forms.TextArea(attrs={'class':'editable medium-editor-textare postcontent'})
+            'text':forms.Textarea(attrs={'class':'editable medium-editor-textare postcontent'})
         }
 
 
-class CommentForm(froms.ModelForm):
+class CommentForm(forms.ModelForm):
 
     class Meta():
         model = Comment
@@ -21,5 +21,5 @@ class CommentForm(froms.ModelForm):
 
         widgets = {
             'author':forms.TextInput(attrs={'class':'textinputclass'}),
-            'text':forms.TextArea(attrs={'class':'editable medium-editor-textare'})
+            'text':forms.Textarea(attrs={'class':'editable medium-editor-textare'})
         }

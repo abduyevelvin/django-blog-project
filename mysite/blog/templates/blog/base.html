@@ -29,8 +29,8 @@
       <div class="navbar-nav align-items-center">
         <a class="navbar-brand bigbrand" href="{% url 'post_list' %}">My Blog</a>
         <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
-        <a class="nav-item nav-link" href="https://www.github.com">Github</a>
-        <a class="nav-item nav-link" href="https://www.linkedin.com">LinkedIn</a>
+        <a class="nav-item nav-link" href="https://www.github.com" target="_blank">Github</a>
+        <a class="nav-item nav-link" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
       </div>
       <div class="navbar-nav align-items-center ml-auto">
         {% if user.is_authenticated %}
@@ -59,8 +59,6 @@
     </div>
   </div>
 
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="{% static 'js/blog.js' %}"></script>
 </body>
 
 </html>

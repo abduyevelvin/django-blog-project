@@ -23,6 +23,7 @@
 
 <hr>
 <a class="btn btn-primary btn-comment" href="{% url 'add_comment_to_post' pk=post.pk %}">Add comment</a>
+<a class="btn btn-light btn-cancel" href="{% url 'post_list' %}">Cancel</a>
 <div class="container">
 
   {% for comment in post.comments.all %}

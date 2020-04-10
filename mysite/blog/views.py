@@ -10,7 +10,7 @@ from django.views.generic import (TemplateView, ListView, DetailView,
 
 # About view.
 class AboutView(TemplateView):
-    tempate_name = 'about.html'
+    template_name = 'blog/about.html'
 
 
 # Post views
@@ -70,7 +70,7 @@ def add_comment_to_post(request, pk):
         form = CommentForm(request.POST)
 
         if form.is_valid():
-            comment = from.save(commit=False)
+            comment = form.save(commit=False)
             comment.post = post
             comment.save()
             return redirect('post_detail', pk=post.pk)

@@ -26,6 +26,11 @@
 
 .btn-comment{
   position: absolute;
+  right: 100px;
+}
+
+.btn-cancel{
+  position: absolute;
   right: 0px;
 }
 
